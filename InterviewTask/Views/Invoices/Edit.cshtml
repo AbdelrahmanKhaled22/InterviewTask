@@ -1,0 +1,48 @@
+﻿@model InvoiceDetails
+
+
+<h1>Create Invoice</h1>
+
+<form asp-controller="Invoices" asp-action="Edit" method="post">
+
+    <div class="form-group">
+        <label asp-for="lineNo"></label>
+        <input asp-for="lineNo" />
+        <span asp-validation-for="lineNo"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="productName"></label>
+        <input asp-for="productName" />
+        <span asp-validation-for="productName"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="price"></label>
+        <input asp-for="price" />
+        <span asp-validation-for="price"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="quantity"></label>
+        <input asp-for="quantity" />
+        <span asp-validation-for="quantity"></span>
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="expiryDate"></label>
+        <input type="date" asp-for="expiryDate" />
+        <span asp-validation-for="expiryDate"></span>
+
+    </div>
+    <div class="form-group">
+
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+
+
+    </div>
+</form>
